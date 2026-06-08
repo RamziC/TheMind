@@ -14,9 +14,9 @@ const io = new Server(httpServer, {
 });
 
 // Serve compiled static assets from React production build
-app.use(express.static(path.join(__dirname, 'dist')));
+app.use(express.static(path.join(__dirname, 'public', 'dist')));
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+  res.sendFile(path.join(__dirname, 'public', 'dist', 'index.html'));
 });
 
 // In-Memory Game Rooms Store
