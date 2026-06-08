@@ -108,7 +108,7 @@ export default function App() {
           <div className="flex gap-8 items-center text-center">
             <div>
               <span className="text-xs font-semibold uppercase tracking-wider text-zinc-500 block">Level</span>
-              <span className="text-xl font-bold text-zinc-100">{room.currentLevel} <span className="text-xs text-zinc-500">/ {room.maxLevels}</span></span>
+              <span className="text-xl font-bold text-zinc-100">{room?.currentLevel} <span className="text-xs text-zinc-500">/ {room?.maxLevels}</span></span>
             </div>
             <div>
               <span className="text-xs font-semibold uppercase tracking-wider text-zinc-500 block">Lives</span>
