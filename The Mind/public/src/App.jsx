@@ -110,13 +110,13 @@ export default function App() {
               <span className="text-xs font-semibold uppercase tracking-wider text-zinc-500 block">Level</span>
               <span className="text-xl font-bold text-zinc-100">{room?.currentLevel} <span className="text-xs text-zinc-500">/ {room?.maxLevels}</span></span>
             </div>
-            <div>
+           <div>
               <span className="text-xs font-semibold uppercase tracking-wider text-zinc-500 block">Lives</span>
-              <span className="text-xl font-bold text-red-500">{'❤️'.repeat(room.lives)}</span>
+              <span className="text-xl font-bold text-red-500">{'❤️'.repeat(room?.lives || 0)}</span>
             </div>
             <div>
               <span className="text-xs font-semibold uppercase tracking-wider text-zinc-500 block">Shurikens</span>
-              <span className="text-xl font-bold text-amber-400">{'⭐'.repeat(room.shurikens)}</span>
+              <span className="text-xl font-bold text-amber-400">{'⭐'.repeat(room?.shurikens || 0)}</span>
             </div>
           </div>
         )}
